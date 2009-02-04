@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.4.5 on Wed Feb  4 14:31:58 2009 -->
+<glade-interface>
+  <widget class="GtkWindow" id="main_window">
+    <signal name="destroy" handler="on_main_window_destroy"/>
+    <child>
+      <widget class="GtkHBox" id="hbox2">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkVBox" id="vbox2">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkLabel" id="event_title_label">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Event Title: </property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkEntry" id="event_title_entry">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <signal name="focus_out_event" handler="on_event_title_entry_editing_done"/>
+                <signal name="editing_done" handler="on_event_title_entry_editing_done"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="event_loc_label">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Event Location</property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkEntry" id="event_loc1_entry">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <signal name="focus_out_event" handler="on_event_loc1_entry_editing_done"/>
+                <signal name="editing_done" handler="on_event_loc1_entry_editing_done"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkEntry" id="event_loc2_entry">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <signal name="focus_out_event" handler="on_event_loc2_entry_editing_done"/>
+                <signal name="editing_done" handler="on_event_loc2_entry_editing_done"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="event_date_label">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Event Date</property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkEntry" id="event_date1_entry">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <signal name="focus_out_event" handler="on_event_date1_entry_editing_done"/>
+                <signal name="editing_done" handler="on_event_date1_entry_editing_done"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">6</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkEntry" id="event_date2_entry">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <signal name="focus_out_event" handler="on_event_date2_entry_editing_done"/>
+                <signal name="editing_done" handler="on_event_date2_entry_editing_done"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">7</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkHSeparator" id="hseparator2">
+                <property name="visible">True</property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">8</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkHSeparator" id="hseparator1">
+                <property name="visible">True</property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">8</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="save_pdf_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="label" translatable="yes">Save as PDF</property>
+                <property name="response_id">0</property>
+                <signal name="released" handler="save_pdf_button_released"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">10</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="save_png_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="label" translatable="yes">Save as PNG</property>
+                <property name="response_id">0</property>
+                <signal name="released" handler="save_png_button_released"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">10</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="save_svg_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="label" translatable="yes">Save as SVG</property>
+                <property name="response_id">0</property>
+                <signal name="released" handler="save_svg_button_released"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">12</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="save_all_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="label" translatable="yes">Save as All</property>
+                <property name="response_id">0</property>
+                <signal name="released" handler="on_save_all_button_released"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">13</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkDrawingArea" id="svgarea">
+            <property name="width_request">600</property>
+            <property name="height_request">800</property>
+            <property name="visible">True</property>
+            <property name="events">GDK_EXPOSURE_MASK | GDK_STRUCTURE_MASK</property>
+            <signal name="expose_event" handler="on_svgarea_expose_event"/>
+          </widget>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
